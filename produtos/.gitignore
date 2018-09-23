@@ -1,1 +1,8 @@
+# Paths
 /target/
+/produtos/.settings/*
+
+# Files
+*.class
+.project
+.classpath
