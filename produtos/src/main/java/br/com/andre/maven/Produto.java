@@ -1,5 +1,15 @@
 package br.com.andre.maven;
 
-public class Produto {
+import lombok.Data;
 
+@Data
+public class Produto {
+	private String nome;
+	private double preco;
+	
+	public Produto(String nome, double preco) {
+		super();
+		this.nome = nome;
+		this.preco = preco;
+	}
 }
