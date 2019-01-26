@@ -1,8 +1,10 @@
 package br.com.andre.maven;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class Produto {
 	private String nome;
 	private double preco;
@@ -12,4 +14,9 @@ public class Produto {
 		this.nome = nome;
 		this.preco = preco;
 	}
+
+	public double getPrecoComImposto() {
+		return getPreco() * 1.10;
+	}
+
 }
